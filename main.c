@@ -1,6 +1,13 @@
 #include <stdio.h>
+#include <unistd.h>
 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
+int main(void)
+{
+    printf("\n%d",STDIN_FILENO);
+    printf("\n%d",STDOUT_FILENO);
+    printf("\n%d",STDERR_FILENO);
+    printf("\n%d",STDIN_FILENO);
+    printf("\n%d",STDOUT_FILENO);
+    printf("\n%d",STDERR_FILENO + 1);
+    printf("\n%d\n",FOPEN_MAX);
 }
